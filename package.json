@@ -1,0 +1,36 @@
+{
+  "name": "icon-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "module": "./dist/icon-test.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/icon-test.js",
+      "require": "./dist/icon-test.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.37"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.3",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.1.0",
+    "vite-svg-loader": "^5.1.0",
+    "vue-tsc": "^2.0.29"
+  }
+}
