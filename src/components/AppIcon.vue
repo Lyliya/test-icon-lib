@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { icons } from "@/assets/index.ts";
-import { computed, defineAsyncComponent } from "vue";
+import { computed } from "vue";
 
 const props = defineProps<{
   name: keyof typeof icons;
 }>();
 
 const iconComponent = computed(() => {
-  return defineAsyncComponent(icons[props.name]);
+  return icons[props.name];
 });
 </script>
 
